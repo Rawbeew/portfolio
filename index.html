@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raji Muhammed Robiu — AI/LLM engineer building with free-tier-by-default</title>
+<meta name="description" content="Personal portfolio of Raji Muhammed Robiu — AI/LLM applications, cold-outreach engineering, and LLM-as-decision systems. All four public repos in one place.">
+<meta name="author" content="Raji Muhammed Robiu">
+<meta property="og:title" content="Raji Muhammed Robiu — AI/LLM engineer">
+<meta property="og:description" content="AI/LLM applications, cold-outreach engineering, LLM-as-decision systems. Four public portfolios.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#faf9f5; --card:#fffdfb; --ink:#211d19; --ink-2:#2b2621;
+    --body:#423e38; --mut:#6f6a62; --hair:#e6dfd3;
+    --coral:#B5503A; --coral-deep:#8f3f2c; --coral-soft:#f4dfd7;
+    --green:#1d6f5c; --green-soft:#effaf5; --green-bord:#bfe3d2;
+    --tan:#7a5a1f; --tan-soft:#fbf5e5; --tan-bord:#e6cf91;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    background:var(--canvas); color:var(--body); line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+
+  /* HERO */
+  header{
+    background:linear-gradient(180deg,var(--ink) 0%,#16130f 100%);
+    color:#f3eee6; padding:64px 0 56px; position:relative; overflow:hidden;
+  }
+  header::before{
+    content:""; position:absolute; inset:0;
+    background:radial-gradient(circle at 80% 30%,rgba(181,80,58,0.25),transparent 50%);
+    pointer-events:none;
+  }
+  header .kicker{
+    color:#e39b83; font-weight:600; letter-spacing:.16em;
+    text-transform:uppercase; font-size:12px; margin-bottom:14px;
+  }
+  header h1{
+    font-family:'Fraunces',Georgia,serif; font-weight:700;
+    font-size:42px; line-height:1.15; margin:0 0 14px;
+    color:#f3eee6; letter-spacing:-.01em;
+  }
+  header .lede{
+    font-size:17px; line-height:1.55; color:#d8d2c5;
+    max-width:680px;
+  }
+  header .lede strong{color:#f3eee6; font-weight:600}
+
+  /* SECTIONS */
+  section{padding:48px 0}
+  h2{
+    font-family:'Fraunces',serif; font-weight:700;
+    font-size:24px; line-height:1.25; color:var(--ink);
+    margin:0 0 6px; letter-spacing:-.01em;
+  }
+  h2 .eyebrow{
+    display:block; font-family:'Inter',sans-serif; font-weight:600;
+    font-size:11px; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--coral-deep); margin-bottom:8px;
+  }
+  .secsub{
+    color:var(--mut); font-size:14.5px; margin:0 0 28px; max-width:720px;
+  }
+
+  /* REPO CARDS */
+  .repos{display:grid; gap:18px; margin-top:24px}
+  .repo{
+    background:var(--card); border:1px solid var(--hair); border-radius:14px;
+    padding:22px 26px; box-shadow:0 1px 0 rgba(33,29,25,0.02);
+    transition:transform .14s ease, box-shadow .14s ease, border-color .14s ease;
+  }
+  .repo:hover{
+    transform:translateY(-1px);
+    border-color:#d9d0bf;
+    box-shadow:0 4px 16px rgba(33,29,25,0.06);
+  }
+  .repo .head{
+    display:flex; align-items:baseline; justify-content:space-between;
+    gap:14px; flex-wrap:wrap; margin-bottom:6px;
+  }
+  .repo h3{
+    font-family:'Fraunces',serif; font-weight:700;
+    font-size:22px; margin:0; color:var(--ink); letter-spacing:-.01em;
+  }
+  .repo h3 a{
+    color:inherit; text-decoration:none;
+    border-bottom:2px solid transparent;
+    transition:border-color .14s ease;
+  }
+  .repo h3 a:hover{border-bottom-color:var(--coral)}
+  .repo .role{
+    font-size:12px; font-weight:600; letter-spacing:.06em;
+    color:var(--coral-deep); text-transform:uppercase;
+  }
+  .repo .desc{color:var(--body); margin:6px 0 14px; font-size:15px}
+  .repo .why{
+    color:var(--mut); font-size:13.5px; line-height:1.55;
+    border-top:1px dashed var(--hair); padding-top:12px; margin-top:10px;
+  }
+  .repo .why b{color:var(--ink); font-weight:600}
+  .tags{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px}
+  .tag{
+    display:inline-block; font-size:11px; font-weight:500;
+    padding:3px 9px; border-radius:99px; background:#f3eee8; color:var(--mut);
+    border:1px solid var(--hair);
+  }
+
+  /* CONTACT */
+  .contact{
+    background:var(--card); border:1px solid var(--hair); border-radius:14px;
+    padding:24px 28px; margin-top:8px;
+  }
+  .contact p{margin:0 0 8px}
+  .contact p:last-child{margin-bottom:0}
+  .contact a{color:var(--coral-deep); text-decoration:none; border-bottom:1px solid var(--coral-soft)}
+  .contact a:hover{border-bottom-color:var(--coral)}
+
+  footer{
+    border-top:1px solid var(--hair); padding:24px 0 36px;
+    color:var(--mut); font-size:13px;
+  }
+  footer a{color:var(--mut); text-decoration:none; border-bottom:1px solid var(--hair)}
+  footer a:hover{color:var(--coral-deep); border-bottom-color:var(--coral-soft)}
+
+  @media(max-width:600px){
+    header{padding:48px 0 40px}
+    header h1{font-size:32px}
+    section{padding:36px 0}
+    .repo{padding:18px 20px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="kicker">Personal portfolio</div>
+    <h1>Raji Muhammed Robiu</h1>
+    <p class="lede">
+      <strong>AI / LLM engineer</strong> building systems where the language
+      model is one <em>component</em>, not the whole product — gated,
+      auditable, and overridable. Free-tier-by-default on cost, evidence-
+      pinned on quality.
+    </p>
+  </div>
+</header>
+
+<main>
+  <!-- THE STORY -->
+  <section>
+    <div class="wrap">
+      <h2><span class="eyebrow">The story</span>What I do, in one paragraph</h2>
+      <p class="secsub">
+        I build small systems that do real work — not demos. The four
+        public repos below are each a different angle on the same
+        engineering instinct: <strong>free-tier-first, reliability-
+        obsessed, evidence-pinned, and adversarial-tested.</strong> B.A.
+        in English Language (final-year project on AI analysis) — the
+        prompts are written by someone who knows that language is the
+        actual product.
+      </p>
+    </div>
+  </section>
+
+  <!-- THE PORTFOLIOS -->
+  <section>
+    <div class="wrap">
+      <h2><span class="eyebrow">The work</span>Four public repos, one coherent instinct</h2>
+      <p class="secsub">
+        Each repo is a portfolio-grade public version of a real,
+        working private system. The private originals stay private
+        because the secret sauce — scoring weights, prompts, lead
+        sources — is the moat. What is here is the engineering thinking.
+      </p>
+
+      <div class="repos">
+
+        <article class="repo">
+          <div class="head">
+            <h3><a href="https://github.com/Rawbeew/flippy" target="_blank" rel="noopener">flippy</a></h3>
+            <span class="role">AI / LLM applications</span>
+          </div>
+          <p class="desc">
+            A multi-provider inference router (zero non-stdlib deps) plus
+            a unified AI hub — chat, RAG, tool-calling, vision, TTS, STT —
+            built on a free-first, auto-failover backbone across 4
+            providers.
+          </p>
+          <div class="why">
+            <b>Why it exists:</b> every provider rate-limits you. The
+            question is whether your system keeps working. This toolkit
+            is the answer I built after a real production incident, and
+            the code I'd want a candidate to show me if I were hiring.
+          </div>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">multi-provider</span>
+            <span class="tag">failover</span>
+            <span class="tag">litellm</span>
+            <span class="tag">RAG</span>
+            <span class="tag">tool-calling</span>
+            <span class="tag">vision</span>
+            <span class="tag">TTS / STT</span>
+          </div>
+        </article>
+
+        <article class="repo">
+          <div class="head">
+            <h3><a href="https://github.com/Rawbeew/You-are-fired" target="_blank" rel="noopener">You-are-fired</a></h3>
+            <span class="role">Cold-outreach engineering</span>
+          </div>
+          <p class="desc">
+            The portfolio version of a working cold-outreach system that
+            finds a <em>measurable defect</em>, prices the fix, and drafts
+            the email — by hand, one at a time, with evidence the
+            prospect can check in 20 seconds. Capped sends, adversarial-
+            tested safety, opt-out integrity.
+          </p>
+          <div class="why">
+            <b>Why it exists:</b> cold outreach fails when it claims too
+            much and proves too little. The single sentence that earns a
+            reply is the one a prospect can verify themselves in twenty
+            seconds. This system enforces that at every step.
+          </div>
+          <div class="tags">
+            <span class="tag">gmail</span>
+            <span class="tag">SMTP</span>
+            <span class="tag">DNS</span>
+            <span class="tag">adversarial-testing</span>
+            <span class="tag">send-cap</span>
+            <span class="tag">opt-out integrity</span>
+          </div>
+        </article>
+
+        <article class="repo">
+          <div class="head">
+            <h3><a href="https://github.com/Rawbeew/just-hired" target="_blank" rel="noopener">just-hired</a></h3>
+            <span class="role">Personal product — fresh-only job board</span>
+          </div>
+          <p class="desc">
+            A working product: a static job board that shows only direct-
+            employer postings released in the last 12 hours, refreshed
+            every 2 hours by a Cloudflare Worker that bypasses Job Bank's
+            datacenter-IP block. Built for a real person in a 30-day job
+            search.
+          </p>
+          <div class="why">
+            <b>Why it exists:</b> job boards show stale leads; the
+            person searching wastes time on roles that were filled
+            yesterday. This one only shows what's actually open right
+            now, with commute-from-North-York badges and a tailored
+            resume + cover letter per posting.
+          </div>
+          <div class="tags">
+            <span class="tag">static site</span>
+            <span class="tag">Cloudflare Worker</span>
+            <span class="tag">Job Bank</span>
+            <span class="tag">UHN</span>
+            <span class="tag">Netlify</span>
+            <span class="tag">ATS scoring</span>
+          </div>
+        </article>
+
+        <article class="repo">
+          <div class="head">
+            <h3><a href="https://github.com/Rawbeew/dont-get-rekt" target="_blank" rel="noopener">dont-get-rekt</a></h3>
+            <span class="role">LLM-as-decision engineering</span>
+          </div>
+          <p class="desc">
+            The portfolio version of a paper-mode crypto signal engine:
+            multi-chain data ingestion + a free-tier LLM casting the
+            final structured <code>BUY: / SKIP:</code> vote per token.
+            The model is the judge, not the source of truth — every
+            gate the LLM cites is a value the pipeline already computed.
+          </p>
+          <div class="why">
+            <b>Why it exists:</b> an LLM that trades real money on its
+            own vote is a system with a single point of failure. An LLM
+            that votes in a paper-mode engine with an adversarial-tested
+            parser and an engine-side override is a system where the
+            model is one component among several — and the only kind
+            worth shipping.
+          </div>
+          <div class="tags">
+            <span class="tag">crypto</span>
+            <span class="tag">multi-chain</span>
+            <span class="tag">paper-trading</span>
+            <span class="tag">structured prompting</span>
+            <span class="tag">free-tier LLM</span>
+            <span class="tag">decisions, not vibes</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO READ THESE -->
+  <section>
+    <div class="wrap">
+      <h2><span class="eyebrow">How to read these</span>If you're hiring, here is the order</h2>
+      <p class="secsub">
+        Each repo has its own README, LLM.txt, and 4–5 engineering-decision
+        posts. The pattern is always the same: <strong>what it is, what
+        problem it solves, why it's built this way, what it's not.</strong>
+        Reading them in order tells the same story four different ways.
+      </p>
+      <ol style="color:var(--body); font-size:15px; padding-left:22px; line-height:1.7">
+        <li><b>flippy</b> — the AI/LLM infrastructure layer that the other three ride on.</li>
+        <li><b>dont-get-rekt</b> — what "LLM as one component, with adversarial-tested backstops" looks like in a high-stakes domain.</li>
+        <li><b>You-are-fired</b> — what "evidence-pinned, opt-out safe, send-cap disciplined" looks like in a real-world domain.</li>
+        <li><b>just-hired</b> — what "free-first infrastructure, refreshes itself, never serves stale data" looks like as a product.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <div class="wrap">
+      <h2><span class="eyebrow">Contact</span>Get in touch</h2>
+      <div class="contact">
+        <p><b>GitHub:</b> <a href="https://github.com/Rawbeew" target="_blank" rel="noopener">github.com/Rawbeew</a></p>
+        <p><b>For hiring managers:</b> these four repos are public, runnable, and the LLM.txt files in each give AI crawlers a structured summary. If you want to see the private originals (the full pipelines with scoring weights and prompts), reach out.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="https://github.com/Rawbeew/portfolio">github.com/Rawbeew/portfolio</a> ·
+    MIT licensed ·
+    no trackers
+  </div>
+</footer>
+
+</body>
+</html>
