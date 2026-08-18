@@ -4,7 +4,11 @@ A single, curated index of the public repositories and products I've shipped.
 
 ## About me
 
-I am an AI / LLM engineer who builds and ships complete products using AI orchestration. My work combines **linguistics precision** (B.A. English, final-year AI analysis) with **cybersecurity adversarial thinking** to build reliable, secure AI systems.
+I am an AI / LLM engineer who builds and ships complete products using AI orchestration. My work combines **linguistics precision** (B.A. English, final-year AI analysis) with **cybersecurity adversarial thinking** (Fortinet NSE 1-3, Cisco CyberOps Associate) to build reliable, secure AI systems.
+
+## Certifications
+- **Fortinet NSE 1, 2, 3** — Network Security Fundamentals, FortiGate Infrastructure, Secure Access
+- **Cisco CyberOps Associate** — Security Operations, Network Intrusion Analysis, Incident Response
 
 ## The Products (6 total)
 
@@ -38,7 +42,7 @@ Content + affiliate site for "effortless outfit ideas" (women & men). Dozens of 
 
 ## My AI Orchestration Approach
 
-I don't just "use AI to code." I **direct AI agents to ship complete products end-to-end** — from architecture and prompt engineering through adversarial testing, security hardening, and deployment. My background in **linguistics** (B.A. English, AI analysis thesis) gives me precise control over language models; my **cybersecurity knowledge** ensures every system has adversarial testing, prompt injection defenses, and secure-by-design patterns.
+I don't just "use AI to code." I **direct AI agents to ship complete products end-to-end** — from architecture and prompt engineering through adversarial testing, security hardening, and deployment. My background in **linguistics** (B.A. English, AI analysis thesis) gives me precise control over language models; my **cybersecurity certifications (Fortinet NSE 1-3, Cisco CyberOps Associate)** ensure every system has adversarial testing, prompt injection defenses, and secure-by-design patterns.
 
 ## Reading order (if you're hiring)
 
@@ -57,4 +61,4 @@ I don't just "use AI to code." I **direct AI agents to ship complete products en
 
 - This page: https://rawbeew.github.io/portfolio/
 - Repository: https://github.com/Rawbeew/portfolio
-- Topics: ai, llm, engineering, portfolio, ai-applications, cold-outreach, signal-engine, job-board, content-platform, affiliate-marketing, 3d-avatar, outfit-recommender, free-tier, reliability, open-source, github-pages
+- Topics: ai, llm, engineering, portfolio, ai-applications, cold-outreach, signal-engine, job-board, content-platform, affiliate-marketing, 3d-avatar, outfit-recommender, free-tier, reliability, open-source, github-pages, cybersecurity, fortinet, cisco, network-security
