@@ -1,51 +1,60 @@
 # cr4ckedDev — Personal Portfolio
 
-A single, curated index of the four public repositories I maintain.
+A single, curated index of the public repositories and products I've shipped.
 
 ## About me
 
-I am an AI / LLM engineer who builds small systems that do real work — not demos. The four public repos below are each a different angle on the same engineering instinct: **free-tier-first, reliability-obsessed, evidence-pinned, and adversarial-tested.** B.A. in English Language (final-year project on AI analysis) — the prompts are written by someone who knows that language is the actual product.
+I am an AI / LLM engineer who builds and ships complete products using AI orchestration. My work combines **linguistics precision** (B.A. English, final-year AI analysis) with **cybersecurity adversarial thinking** to build reliable, secure AI systems.
 
-## The four public repos
+## The Products (6 total)
 
-### 1. flippy — AI / LLM applications engineering
-A multi-provider inference router (zero non-stdlib deps) plus a unified AI hub — chat, RAG, tool-calling, vision, TTS, STT — built on a free-first, auto-failover backbone across 4 providers.
-
+### 1. flippy — AI / LLM infrastructure
+Free-first multi-provider LLM inference router + unified AI hub (chat, RAG, vision, TTS, STT). Zero non-stdlib deps. Built for production reliability.
 - Repository: https://github.com/Rawbeew/flippy
-- Why it matters: every provider rate-limits you; the question is whether your system keeps working.
 
 ### 2. dont-get-rekt — LLM-as-decision engineering
-The portfolio version of a paper-mode crypto signal engine: multi-chain data ingestion + a free-tier LLM casting the final structured `BUY:` or `SKIP:` vote per token.
-
+Paper-mode crypto signal engine. Multi-chain ingestion → free-tier LLM casts structured BUY/SKIP votes. Adversarial-tested (44 tests).
 - Repository: https://github.com/Rawbeew/dont-get-rekt
-- Why it matters: an LLM that trades real money on its own vote is a system with a single point of failure. This one keeps the model as a judge, not the source of truth.
 
 ### 3. You-are-fired — Cold-outreach engineering
-The portfolio version of a working cold-outreach system that finds a *measurable defect*, prices the fix, and drafts the email — by hand, one at a time, with evidence the prospect can check in 20 seconds.
-
+Cold outreach engine for one-person agencies. Finds measurable defects, prices the fix, drafts evidence-pinned emails. Capped sends, opt-out integrity, adversarial-tested safety.
 - Repository: https://github.com/Rawbeew/You-are-fired
-- Why it matters: cold outreach fails when it claims too much and proves too little. The single sentence that earns a reply is the one a prospect can verify themselves in twenty seconds.
 
 ### 4. just-hired — Personal product, fresh-only job board
-A working product: a static job board that shows only direct-employer postings released in the last 12 hours, refreshed every 2 hours by a Cloudflare Worker that bypasses Job Bank's datacenter-IP block. Built for a real person in a 30-day job search.
-
+Fresh-only direct-employer job board. Cloudflare Worker fetches Job Bank + UHN every 2h. ATS resume/cover letter generator. Zero stale leads.
 - Repository: https://github.com/Rawbeew/just-hired
-- Why it matters: job boards show stale leads; this one shows only what's actually open right now.
+
+### 5. raffybraids.ca — Service business platform
+Full service + booking site for a Toronto braider. Complete with service catalog, gallery, booking integration, and SEO-optimized local presence.
+- Live: https://raffybraids.ca
+
+### 6. nonchallant.store + Look Lab App — Content + affiliate platform
+Content + affiliate site for "effortless outfit ideas" (women & men). Dozens of practical guides. Includes:
+- **Look Lab & Match Lab App** — Interactive 3D avatar try-on, weekly outfit planning, color contrast profiling, tech/sneaker/travel coordination
+- **Fit Finder** — Situation-based outfit recommender
+- Strong emphasis on decision reduction: "Decide once. Then never think about it again."
+- Full website + companion app built entirely with AI orchestration
+- Live: https://nonchallant.store
+
+## My AI Orchestration Approach
+
+I don't just "use AI to code." I **direct AI agents to ship complete products end-to-end** — from architecture and prompt engineering through adversarial testing, security hardening, and deployment. My background in **linguistics** (B.A. English, AI analysis thesis) gives me precise control over language models; my **cybersecurity knowledge** ensures every system has adversarial testing, prompt injection defenses, and secure-by-design patterns.
 
 ## Reading order (if you're hiring)
 
-1. **flippy** — the AI/LLM infrastructure layer that the other three ride on.
-2. **dont-get-rekt** — what "LLM as one component, with adversarial-tested backstops" looks like in a high-stakes domain.
-3. **You-are-fired** — what "evidence-pinned, opt-out safe, send-cap disciplined" looks like in a real-world domain.
-4. **just-hired** — what "free-first infrastructure, refreshes itself, never serves stale data" looks like as a product.
+1. **flippy** — The AI/LLM infrastructure layer
+2. **dont-get-rekt** — LLM as judge with adversarial backstops
+3. **You-are-fired** — Evidence-pinned, safety-first cold outreach
+4. **just-hired** — Free-first infrastructure, self-refreshing product
+5. **nonchallant.store + Look Lab** — Complete consumer product (web + app)
 
 ## Contact
 
 - GitHub: https://github.com/Rawbeew
+- Portfolio: https://rawbeew.github.io/portfolio/
 
 ## How to cite
 
 - This page: https://rawbeew.github.io/portfolio/
 - Repository: https://github.com/Rawbeew/portfolio
-- Topics: ai, llm, engineering, portfolio, ai-applications, cold-outreach, signal-engine, job-board, free-tier, reliability, open-source, github-pages
-
+- Topics: ai, llm, engineering, portfolio, ai-applications, cold-outreach, signal-engine, job-board, content-platform, affiliate-marketing, 3d-avatar, outfit-recommender, free-tier, reliability, open-source, github-pages
